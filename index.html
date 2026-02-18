@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PokeOnion - TCG Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>  
+    <header class="cabecalho">
+        <img class="img-logo" src="img/pokelogo.png" alt="Logo PokeOnion">
+        <section>
+            <h1 class="titulo-cabecalho">PokeOnion</h1>
+            <p class="paragrafo-cabecalho">Frete Grátis a partir de R$ 200</p>
+            <p>10% OFF cupom: <strong>PrimeiraCompra</strong></p>
+        </section>
+
+        <section class="barra-login">   
+            <a class="cadastro" href="#">Cadastre-se</a>
+            <div class="carrinho-container">
+                <img class="img-carrinho" src="img/car.png" alt="Carrinho">
+                <span id="contagem-carrinho">0</span>
+            </div>
+            <img class="img-login" src="img/perfil.png" alt="Login">
+        </section>        
+    </header>
+
+    <main>
+        <nav class="navbar">
+            <ul class="menu">
+                <li><a href="#">Boosters</a></li>
+                <li><a href="#">Treinadores</a></li>
+                <li><a href="#">Itens</a></li>
+                <li><a href="#">Cartas Gold</a></li>
+                <li><a href="#">Cartas Clássicas</a></li>
+                <li><a href="#">Venda</a></li>
+            </ul>
+        </nav>
+        
+        <section class="banner-principal">
+    <div class="janela-banner">
+        <div id="vitrine-banner">
+            <img src="https://d1i787aglh9bmb.cloudfront.net/assets/img/me-expansions/me2dot5/header/pt-br/me2dot5-large-fallback.png" alt="Banner 1">
+            <img src="https://d1i787aglh9bmb.cloudfront.net/assets/img/me-expansions/me02/header/pt-br/me02-large-fallback.png" alt="Banner 2">
+            <img src="https://d1i787aglh9bmb.cloudfront.net/assets/img/me-expansions/me01/header/pt-br/me01-large-fallback.png" alt="Banner 3">
+        </div>
+    </div>
+</section>
+
+        <section class="container-titulo">
+            <h2 class="destaque">Destaques</h2>
+        </section>
+
+        <section id="sessao-carrosel">
+            <button class="seta" onclick="moverEsquerda()">&#10094;</button>
+            <div class="janela-carrosel">
+                <div id="vitrine-destaque"></div>
+            </div>
+            <button class="seta" onclick="moverDireita()">&#10095;</button>
+        </section>
+
+        <section class="container-titulo">
+            <h2 class="destaque">Ofertas</h2>
+        </section>
+
+        <section id="sessao-carrosel-promo">
+            <button class="seta" onclick="moverEsquerdaPromo()">&#10094;</button>
+            <div class="janela-carrosel">
+                <div id="vitrine-promo"></div>
+            </div>
+            <button class="seta" onclick="moverDireitaPromo()">&#10095;</button>
+        </section>
+    </main>
+
+    <footer class="rodape-epic">
+    <div class="barra-pagamento">
+        <span>Formas de Pagamento</span>
+        <div class="cartoes">
+            <img src="img/icon/pag/pix.png" alt="pix">
+            <img src="img/icon/pag/master.png" alt="MasterCard">
+            <img src="img/icon/pag/visa.png" alt="Visa">
+            <img src="img/icon/pag/ame.png" alt="Bitcoin">
+            <img src="img/icon/pag/nubank.png" alt="Nubank">
+        </div>
+    </div>
+
+    <div class="container-rodape">
+        <div class="col-logo">
+            <img src="img/pokelogo.png" alt="Logo" class="logo-rodape">
+        </div>
+
+        <div class="col-social">
+            <h3>Siga-nos!</h3>
+            <div class="redes">
+                <img src="img/icon/facebook.png" alt="FB">
+                <img src="img/icon/instagram.png" alt="IG">
+                <img src="img/icon/youtube.png" alt="YT">
+            </div>
+        </div>
+
+        <div class="divisor"></div>
+
+        <div class="col-contato">
+            <div class="contato-item">
+                <img src="img/icon/telefone.png" alt="">
+                <div>
+                    <small>Loja</small>
+                    <p>11 2026-1997</p>
+                </div>
+            </div>
+            <div class="contato-item">
+                <img src="img/icon/whatsapp.png" alt="">
+                <p>11 91997-2026</p>
+            </div>
+        </div>
+
+        <div class="col-info">
+            <div class="info-item">
+                <img src="img/icon/local.png" alt="">
+                <div>
+                    <strong>Rua da Charizard, 18</strong>
+                    <p>Pallet - Região de Kanto</p>
+                </div>
+            </div>
+            <div class="info-item">
+                <img src="img/icon/e-mail.png" alt="">
+                <p>contato@pokeonion.com.br</p>
+            </div>
+            <div class="info-item">
+                <img src="img/icon/relogio.png" alt="">
+                <p>Segunda a Domingo, 9h às 21h</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
